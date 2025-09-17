@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Ondas en un Medio</title>
+     <!-- Favicon -->
+     <link rel="jpg" href="logotipo.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <h1 id="tituloPrin">Ondas en un Medio</h1>
+    <h1 id="tituloSecun" style="display: none;">Ondas en <span id="tituloTipo"></span></h1>
+
+    <div class="input-container" id="input-container">
+        <label for="selectMedio">Medio: </label>
+        <select id="selectMedio">
+                <option value="" disabled selected>Selecciona el medio</option>
+            <option value="1">Aire</option>
+            <option value="2">Agua salada</option>
+            <option value="3">Agua dulce</option>
+            <option value="4">Acero</option>
+            <option value="5">Vidrio</option>
+            <option value="6">Cobre</option>
+            <option value="7">Aluminio</option>
+            <option value="8">Hormigón</option>
+            <option value="9">Madera (Pino)</option>
+            <option value="10">Plástico</option>
+        </select>
+
+        <label for="frecuencia">Frecuencia (Hz): </label>
+        <input type="number" id="frecuencia" required>
+
+        <label for="longitud">Longitud de Onda:</label>
+        <div class="input-group">
+            <input type="number" id="longitud" required>
+            <select id="longitud-unidad">
+                <option value="cm">cm</option>
+                <option value="m" selected>m</option>
+            </select>
+        </div>
+        
+        <label for="amplitud">Amplitud:</label>
+        <div class="input-group">
+            <input type="number" id="amplitud" required>
+            <select id="amplitud-unidad">
+                <option value="cm">cm</option>
+                <option value="m" selected>m</option>
+            </select>
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+    </div>
+
+    <div class="results-container" id="results-container" style="display: none;">
+        <div class="cards-container">
+            <div class="card">
+                <h2>Frecuencia</h2>
+                <p id="frecuencia-resultado">0 Hz</p>
+            </div>
+            <div class="card">
+                <h2>Longitud</h2>
+                <p id="longitud-resultado">0 m</p>
+            </div>
+            <div class="card">
+                <h2>Amplitud</h2>
+                <p id="amplitud-resultado">0 m</p>
+            </div>
+            <div class="card">
+                <h2>Periodo</h2>
+                <p id="periodo-resultado">0 m</p>
+            </div>
+            <div class="card">
+                <h2>Número de onda</h2>
+                <p id="numeroOnda-resultado">0 m</p>
+            </div>
+            <div class="card">
+                <h2>Frecuencia angular</h2>
+                <p id="frecuenciaAngular-resultado">0 m</p>
+            </div>
+            <div class="card importante">
+                <h2>Velocidad de Propagación</h2>
+                <p id="velocidad-resultado">0 m/s</p>
+            </div>
+        </div>
+        <div class="grafico">
+            <h2 id="tipoOndaOn"></h2>
+            <canvas id="grafica" width="400" height="200"></canvas>
+        </div>
+        <button onclick="location.reload()">Volver</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
