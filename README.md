@@ -23,7 +23,7 @@ Este proyecto es una aplicación interactiva que permite **calcular y visualizar
 
 ## 📦 Instalación
 ```bash
-git clone https://github.com/tuusuario/simulador-ondas.git
+git clone https://github.com/Juanh10/simulador-ondas.git
 cd simulador-ondas
 ```
 ---
