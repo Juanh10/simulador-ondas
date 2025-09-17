@@ -29,3 +29,6 @@ cd simulador-ondas
 ---
 📝 Licencia
 Este proyecto está bajo la licencia MIT.
+
+👨‍💻 Autor
+Juan David Hernández
