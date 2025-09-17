@@ -27,8 +27,17 @@ git clone https://github.com/Juanh10/simulador-ondas.git
 cd simulador-ondas
 ```
 ---
-📝 Licencia
-Este proyecto está bajo la licencia MIT.
 
 👨‍💻 Autor
+
 Juan David Hernández
+
+📍 Espinal, Tolima – Colombia
+
+💼 Estudiante de Ingeniería de Sistemas | Programador Junior
+
+---
+
+📝 Licencia
+
+Este proyecto está bajo la licencia MIT.
